@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping through an array and given tokens using the map function</title>
+</head>
+<body>
+    
+
+    <script>
+        /*Use a for loop to print out the name of every user object in an array before night.
+        Then use ".map" to give every active user a token.*/
+
+
+        let user = [
+            {
+                name: "Ayo",
+                age : 20,
+                gender : "male",
+                participation :  "active",
+                token : 0
+            },
+            {
+                name : "Chimdi",
+                age : 23,
+                gender : "female",
+                participation :  "active",
+                token : 0
+            },
+            {
+                name : "Toke",
+                age : 21,
+                gender : "female",
+                participation :  "passive",
+                token : 0
+            },
+            {
+                name : "Elba",
+                age : 20,
+                gender : "female",
+                participation :  "active",
+                token :0
+            },
+            {
+                name : "Oghoro",
+                age : 28,
+                gender : "male",
+                participation :  "active",
+                token : 0
+            },
+            {
+                name : "Charis",
+                age : 24,
+                gender : "female",
+                participation :  "passive",
+                token : 0
+            },
+            {
+                name : "Sophia",
+                age : 21,
+                gender : "female",
+                participation : "passive",
+                token : 0
+            },
+            {
+                name : "Gerald",
+                age : 27,
+                gender : "male",
+                participation : "active",
+                token : 0
+            }
+
+        ]
+
+        for (i = 0; i < user.length; i++){
+            document.write( user[i].name + "<br>")
+        }
+
+        let receiveToken = user.map(function(token){
+            return token + 5;
+        })
+
+        console.log(receiveToken);
+
+    </script>
+</body>
+</html>
